@@ -1,0 +1,1 @@
+link: zadenyip.github.io/blog
