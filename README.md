@@ -1,1 +1,1 @@
-link: zadenyip.github.io/blog
+link: [](https://zadenyip.github.io/blog/)
