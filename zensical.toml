@@ -45,8 +45,9 @@ Copyright &copy; 2025 ZadenYip
 #
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
-  {"Home" = "index.md"},
-  { "About Me" = "about-me.md" },
+  {"主页" = "index.md"},
+  { "关于我" = "about-me.md" },
+  { "启示录" = "insightful-sayings.md" },
   {"Zensical Docs" = [
       "get-started.md",
       "markdown.md",
