@@ -48,6 +48,7 @@ nav = [
   {"主页" = "index.md"},
   { "关于我" = "about-me.md" },
   { "启示录" = "insightful-sayings.md" },
+  { "区间树" = "interval-tree.md" },
   {"Zensical Docs" = [
       "get-started.md",
       "markdown.md",
