@@ -14,7 +14,7 @@ Introduction to Algorithms 指出区间树基于红黑树扩展的，而唯一�
 没啥好说的，根据 Introduction to Algorithms 中的区间树章节实现即可，书里有现成的伪代码。
 
 ```pseudocode
-INTERVEL-SEARCH(T, i)
+INTERVAL-SEARCH(T, i)
 x = T.root
 while x != T.NIL and i does not overlap x.int
     if x.left != T.NIL and x.left.max >= i.low
@@ -36,7 +36,7 @@ OVERLAP(int_a, int_b)
 区间树插入和红黑树的插入类似，只是需要在插入过程中维护 max 属性。从根节点找到插入位置的过程中，沿途更新 max 属性即可。
 
 ```pseudocode
-INTERVEL-INSERT(T, z)
+INTERVAL-INSERT(T, z)
 x = T.root
 y = T.NIL
 while x != T.NIL
@@ -57,14 +57,13 @@ z.left = T.NIL
 z.right = T.NIL
 z.color = RED
 z.max = z.int.high // 多添加的代码
-INTERVEL-INSERT-FIXUP(T, z)
+INTERVAL-INSERT-FIXUP(T, z)
 ```
 
-## 插入修复区间树保持红黑树性质的操作
+## 插入修复操作
 
-INTERVEL-INSERT-FIXUP 和红黑树的 INSERT-FIXUP 几乎一样，只是将旋转操作改为区间树的旋转操作。因为区间树旋转时需要维护 max 属性。
+INTERVAL-INSERT-FIXUP 和红黑树的 INSERT-FIXUP 几乎一样，只是将旋转操作改为区间树的旋转操作。因为区间树旋转时需要维护 max 属性。
 
-### 旋转操作
 红黑树基础上改区间树，旋转的操作会涉及子树下区间 max 属性的改变，因此原红黑树的左旋操作无法使用，得进行修改。
 原因如下：
 ```
@@ -95,7 +94,7 @@ T1     y
 
 伪代码如下：
 ```pseudocode
-INTERVEL-LEFT-ROTATE(T, x)
+INTERVAL-LEFT-ROTATE(T, x)
 y = x.right
 x.right = y.left
 if y.left != T.NIL
