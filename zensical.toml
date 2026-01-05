@@ -47,8 +47,12 @@ Copyright &copy; 2025 ZadenYip
 nav = [
   {"主页" = "index.md"},
   { "关于我" = "about-me.md" },
+  { "帖子" = [
+      "posts/interval-tree.md",
+      "posts/angular-electron-vscode-debugger.md"
+  ]},
   { "启示录" = "insightful-sayings.md" },
-  { "区间树" = "interval-tree.md" },
+  { "待办事项" = "todo.md" },
   { "看过的学习材料" = [
       "books/cs-material.md",
       "books/use-the-index-luke.md"
