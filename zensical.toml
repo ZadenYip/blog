@@ -54,7 +54,8 @@ nav = [
   { "启示录" = "insightful-sayings.md" },
   { "待办事项" = "todo.md" },
   { "看过的学习材料" = [
-      "books/cs-material.md"
+      "books/cs-material.md",
+      "books/use-the-index-luke.md"
   ]},
   {"Zensical Docs" = [
       "get-started.md",
