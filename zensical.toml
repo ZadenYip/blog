@@ -51,12 +51,15 @@ nav = [
       "posts/interval-tree.md",
       "posts/angular-electron-vscode-debugger.md"
   ]},
-  { "启示录" = "insightful-sayings.md" },
-  { "待办事项" = "todo.md" },
   { "看过的学习材料" = [
       "books/cs-material.md",
       "books/use-the-index-luke.md"
   ]},
+  { "碎碎念" = [
+    "journals/index.md",
+    "journals/insightful-sayings.md"
+  ]},
+  { "目前想做的事" = "todo.md" },
   {"Zensical Docs" = [
       "get-started.md",
       "markdown.md",
