@@ -8,7 +8,7 @@ icon: material/book
 
 ### Java
 
-《Java 从入门到精通》是好久以前看的，是最早接触编程开发的时，初一看的，书写的很书面化离实践太远了，真正上手主要还是靠当时写 Minecraft 的 Bukkit 插件学习入门的。此外，吐槽下 Java 是真的很啰嗦（
+《Java 从入门到精通》是好久以前看的，是引领我入门编程开发的一本书。那时候，我还在读初一。这本书写的内容很书面化离实践太远了，真正上手主要还是靠当时写 Minecraft 的 Bukkit 插件学习入门的。此外，吐槽下 Java 是真的很啰嗦（
 
 - 《Java 从入门到精通》
 
@@ -51,8 +51,8 @@ CS61B 没全部看完，做到实现简易的 Git 就没做了，后面的课也
 
 ## 操作系统
 
-《Operating Systems Principles and Practice》给我感觉收获很多，但是对于实际不做底层的时候的工程应用似乎帮助不大，第二卷并发对理解多线程开发倒是有帮助，可惜的是没无锁开发的内容以及更实际的数据结构上应用条件变量上。  
-做了一点 MIT 6.828 的 lab，但太枯燥了就没继续做下去。
+《Operating Systems Principles and Practice》给我感觉收获很多，可惜没非常硬核的代码示例也没实际的工程实践结合。只想了解多线程开发，这本书只有第二卷值得读，主要是以条件变量和锁去构建多线程应用，对于信号量（semaphore）非常少，CAS 有提及，但是也不是很深入。  
+除此之外，也另外做了一点 MIT 6.828 的 lab，但太枯燥了就没继续做下去。
 
 - 《Operating Systems Principles and Practice Vol.1 Kernels and Processes》
 - 《Operating Systems Principles and Practice Vol.2 Concurrency》
