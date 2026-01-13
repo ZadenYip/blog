@@ -50,7 +50,8 @@ nav = [
   { "帖子" = [
       "posts/interval-tree.md",
       "posts/angular-electron-vscode-debugger.md",
-      "posts/multiple-tsconfig-vscode.md"
+      "posts/multiple-tsconfig-vscode.md",
+      "posts/bt-24/bt-24.md"
   ]},
   { "看过的学习材料" = [
       "books/cs-material.md",
