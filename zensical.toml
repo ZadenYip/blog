@@ -51,7 +51,8 @@ nav = [
       "posts/interval-tree.md",
       "posts/angular-electron-vscode-debugger.md",
       "posts/multiple-tsconfig-vscode.md",
-      "posts/bt-24/bt-24.md"
+      "posts/bt-24/bt-24.md",
+      "posts/electron-node-module-problem.md"
   ]},
   { "看过的学习材料" = [
       "books/cs-material.md",
