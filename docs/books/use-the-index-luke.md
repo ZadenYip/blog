@@ -12,3 +12,15 @@ Sometimes ORM tools use UPPER and LOWER without the developer’s knowledge. Hib
 有时 ORM 工具会在开发者不知情的情况下使用 UPPER 或 LOWER。例如，Hibernate 会在进行不区分大小写的搜索时，隐式地注入一个 LOWER 调用。  
 
 这可能导致创的索引没被使用（因为索引区分大小写）
+
+> 来自[Smart Logic](https://use-the-index-luke.com/sql/where-clause/obfuscation/smart-logic) 
+```
+SELECT first_name, last_name, subsidiary_id, employee_id
+  FROM employees
+ WHERE ( subsidiary_id    = :sub_id OR :sub_id IS NULL )
+   AND ( employee_id      = :emp_id OR :emp_id IS NULL )
+   AND ( UPPER(last_name) = :name   OR :name   IS NULL )
+```
+> 该查询为了提高可读性使用了命名绑定变量。所有可能的过滤条件都被静态地写入了 SQL 语句中。只要某个过滤条件不需要，就传入 NULL 作为搜索值：通过 OR 逻辑将该条件“关闭”。
+从语法和语义上看，这是一条完全合理的 SQL 语句。NULL 的使用甚至也符合 SQL 三值逻辑（three-valued logic）的定义。然而，它却是性能最差的反模式（performance anti-pattern）之一。
+由于任何一个过滤条件都可能在运行时被“取消”，数据库无法针对某个特定过滤条件来优化执行计划。数据库只能为最坏情况做准备——即所有过滤条件都被禁用
