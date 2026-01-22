@@ -60,6 +60,7 @@ nav = [
   ]},
   { "碎碎念" = [
     "journals/index.md",
+    "journals/21-year.md",
     "journals/insightful-sayings.md"
   ]},
   { "目前想做的事" = "todo.md" },
