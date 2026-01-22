@@ -24,3 +24,7 @@ SELECT first_name, last_name, subsidiary_id, employee_id
 > 该查询为了提高可读性使用了命名绑定变量。所有可能的过滤条件都被静态地写入了 SQL 语句中。只要某个过滤条件不需要，就传入 NULL 作为搜索值：通过 OR 逻辑将该条件“关闭”。
 从语法和语义上看，这是一条完全合理的 SQL 语句。NULL 的使用甚至也符合 SQL 三值逻辑（three-valued logic）的定义。然而，它却是性能最差的反模式（performance anti-pattern）之一。
 由于任何一个过滤条件都可能在运行时被“取消”，数据库无法针对某个特定过滤条件来优化执行计划。数据库只能为最坏情况做准备——即所有过滤条件都被禁用
+
+> 来自[Smart Logic](https://use-the-index-luke.com/sql/where-clause/obfuscation/smart-logic) 
+> Nevertheless there is a widely used practice that avoids dynamic SQL in favor of static SQL—often because of the “dynamic SQL is slow” myth. This practice does more harm than good if the database uses a shared execution plan cache like Db2 (LUW), the Oracle database, or SQL Server.
+> 尽管（数据库是为动态SQL优化）如此，仍然有一种被广泛采用的做法：为了避免动态 SQL 而使用静态 SQL（static SQL）——这通常源于“动态 SQL 很慢（dynamic SQL is slow）”这一 myth。如果数据库使用共享执行计划缓存（shared execution plan cache）（例如 Db2（LUW）、Oracle 数据库或 SQL Server），这种做法往往弊大于利。
