@@ -6,6 +6,16 @@ icon: material/notebook
 
 说是笔记，实际上更像是记录雷点，方便以后遇到坑来查阅。相关更容易做成卡片的知识点我全部都是放在了 SuperMemo 进行间隔重复了。
 
+Oracle 创建索引后应该进行的一些维护操作：
+
+> Statistics for a function-based index (FBI) are also kept on table level as virtual columns. Although the Oracle database collects the index statistics for new indexes automatically (since release 10g), it does not update the table statistics. For this reason, the Oracle documentation recommends updating the table statistics after creating a function-based index  
+基于函数的索引（function-based index，FBI）的统计信息同样是在表级别维护的，以虚拟列（virtual columns）的形式存在。
+尽管 Oracle 数据库会自动收集新建索引的索引统计信息（自 10g 版本起），但它不会自动更新表统计信息。
+因此，Oracle 官方文档建议在创建基于函数的索引之后，手动更新表统计信息  
+来自[Case-Insensitive-Search](https://use-the-index-luke.com/sql/where-clause/functions/case-insensitive-search)
+
+---
+
 > Tip  
 Sometimes ORM tools use UPPER and LOWER without the developer’s knowledge. Hibernate, for example, injects an implicit LOWER for case-insensitive searches.  
 有时 ORM 工具会在开发者不知情的情况下使用 UPPER 或 LOWER。例如，Hibernate 会在进行不区分大小写的搜索时，隐式地注入一个 LOWER 调用。  
