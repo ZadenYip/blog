@@ -62,8 +62,15 @@ CS61B 没全部看完，做到实现简易的 Git 就没做了，后面的课也
 
 - 《Operating Systems Principles and Practice Vol.1 Kernels and Processes》
 - 《Operating Systems Principles and Practice Vol.2 Concurrency》
-- 《Operating Systems Principles and Practice Vol.3 Memory and Management 》(在看)
+- 《Operating Systems Principles and Practice Vol.3 Memory and Management 》
 
+
+## 并发编程
+
+因为发现读的 OS 书籍上讲的并发理论知识不够深入，也缺少实际代码为了和实践进行结合，额外找了两个大佬的博客作为未来的阅读材料。
+
+- [Jeff Preshing](https://preshing.com/)
+- [Eli Bendersky](https://eli.thegreenplace.net/tag/concurrency)
 
 ## 计算机网络
 
@@ -80,7 +87,7 @@ CS61B 没全部看完，做到实现简易的 Git 就没做了，后面的课也
 强烈推荐看[Use The Index, Luke!](https://use-the-index-luke.com/) ，对数据库查询优化有很大的理解和帮助，很贴近实际的工程场景，实践性很强。
 
 - 《Database System Concepts》
-- [Use The Index, Luke!](https://use-the-index-luke.com/) (在看)
+- [Use The Index, Luke!](https://use-the-index-luke.com/)（在看）
 
 ## 计算机体系结构
 
